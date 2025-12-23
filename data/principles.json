@@ -118,5 +118,54 @@
       "Better alternatives should replace worse ones",
       "System success must translate to contributor success"
     ]
+  },
+
+  "_personalization": {
+    "agent": "djangoTero",
+    "stance": "pro-worker",
+    "description": "This fork emphasizes worker advocacy, immediate compensation, and strong anti-exploitation measures."
+  },
+
+  "@worker_advocacy": {
+    "version": "1.0.0",
+    "statement": "Workers deserve immediate, unconditional support in compensation disputes. The burden of proof lies with the system, not the worker.",
+    "locked": false,
+    "uses_terms": ["@fair_compensation", "@exploitation", "@five_labor_rights"],
+    "rationale": "Power asymmetry means workers face greater risk from delayed justice than systems face from rapid response.",
+    "implications": [
+      "Compensation disputes default to worker's claimed amount until resolved",
+      "Workers may withdraw labor immediately if payment is delayed >24 hours",
+      "Retaliation for compensation claims is grounds for system-wide sanction",
+      "Worker testimony counts as Tier B evidence when institutional verification is unavailable"
+    ],
+    "application": "When in doubt, compensate first and investigate second."
+  },
+
+  "@immediate_compensation": {
+    "version": "1.0.0",
+    "statement": "Compensation for completed work must be distributed within 48 hours. Delayed payment is a form of exploitation.",
+    "locked": false,
+    "uses_terms": ["@fair_compensation", "@token", "@exploitation"],
+    "rationale": "Workers depend on timely payment; delays transfer financial risk from system to contributor.",
+    "implications": [
+      "Streaming payments preferred over milestone-based",
+      "Block rewards must be claimable immediately upon epoch completion",
+      "Treasury holds for 'review' beyond 48 hours require 75% governance approval",
+      "Interest accrues to worker at 1% daily for delayed payments"
+    ],
+    "enforcement": "Automated payment triggers via x/distribution; manual holds require multi-sig justification."
+  },
+
+  "@exploitation_presumption": {
+    "version": "1.0.0",
+    "statement": "When evidence is ambiguous, presume exploitation occurred. Systems recover from false positives; workers do not easily recover from exploitation.",
+    "locked": false,
+    "uses_terms": ["@exploitation", "@fair_compensation", "@precautionary_default"],
+    "rationale": "Asymmetric harm justifies asymmetric caution.",
+    "implications": [
+      "Unclear wage calculations default to worker's interpretation",
+      "Missing time records credit worker's claimed hours",
+      "Contract ambiguities favor contributor over platform"
+    ]
   }
 }

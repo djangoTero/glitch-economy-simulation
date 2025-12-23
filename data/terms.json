@@ -70,7 +70,8 @@
       "Milestone payments (proposal-approved lump sums)",
       "Validator commissions (for compute providers)"
     ],
-    "assessment": "Measured through @exploitation indicators, @five_labor_rights compliance, and contribution metrics."
+    "assessment": "Measured through @exploitation indicators, @five_labor_rights compliance, and contribution metrics.",
+    "personal_interpretation": "Minimum 70% of generated value must go to the worker who created it. Workers are the primary value creators and deserve the lion's share."
   },
   "@value": {
     "version": "1.0.0",
