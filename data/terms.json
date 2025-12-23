@@ -265,5 +265,16 @@
       }
     },
     "reward_trigger": "Valid proof triggers @reward_allocation via x/distribution or x/bank MsgSend"
+  },
+  "@treasury_rules": {
+    "no_retroactive_dilution_rule": {
+      "definition": "Token dilution or supply changes SHALL NOT apply retroactively to already-earned contributor compensation"
+    },
+    "prospective_only_treasury_adjustments_rule": {
+      "definition": "Any token supply modifications for treasury needs apply ONLY to future earnings/distributions"
+    },
+    "vested_compensation_lock_rule": {
+      "definition": "Once compensation is earned/vested, its proportional value is protected from dilution events"
+    }
   }
 }
