@@ -70,8 +70,7 @@
       "Milestone payments (proposal-approved lump sums)",
       "Validator commissions (for compute providers)"
     ],
-    "assessment": "Measured through @exploitation indicators, @five_labor_rights compliance, and contribution metrics.",
-    "personal_interpretation": "Minimum 70% of generated value must go to the worker who created it. Workers are the primary value creators and deserve the lion's share."
+    "assessment": "Measured through @exploitation indicators, @five_labor_rights compliance, and contribution metrics."
   },
   "@value": {
     "version": "1.0.0",
@@ -266,45 +265,30 @@
     },
     "reward_trigger": "Valid proof triggers @reward_allocation via x/distribution or x/bank MsgSend"
   },
-  "@treasury_rules": {
-    "no_retroactive_dilution_rule": {
-      "definition": "Token dilution or supply changes SHALL NOT apply retroactively to already-earned contributor compensation"
-    },
-    "prospective_only_treasury_adjustments_rule": {
-      "definition": "Any token supply modifications for treasury needs apply ONLY to future earnings/distributions"
-    },
-    "vested_compensation_lock_rule": {
-      "definition": "Once compensation is earned/vested, its proportional value is protected from dilution events"
-    }
-  },
-  "@no_retroactive_dilution": {
-    "definition": "Token dilution or supply changes SHALL NOT apply retroactively to already-earned contributor compensation"
-  },
-  "@prospective_only_treasury_adjustments": {
-    "definition": "Any token supply modifications for treasury needs apply ONLY to future earnings/distributions"
-  },
-  "@vested_compensation_lock": {
-    "definition": "Once compensation is earned/vested, its proportional value is protected from dilution events"
-  },
-  "@treasury_rules.no_retroactive_dilution": {
-    "definition": "Token dilution or supply changes SHALL NOT apply retroactively to already-earned contributor compensation"
-  },
-  "@treasury_rules.prospective_only_treasury_adjustments": {
-    "definition": "Any token supply modifications for treasury needs apply ONLY to future earnings/distributions"
-  },
-  "@treasury_rules.vested_compensation_lock": {
-    "definition": "Once compensation is earned/vested, its proportional value is protected from dilution events"
-  },
   "@worker_advocacy": {
-    "definition": "workers have priority in compensation disputes"
-  },
-  "@exploitation_presumption": {
-    "definition": "disputes should default to worker-favorable interpretations unless clear evidence contradicts"
+    "version": "1.0.0",
+    "definition": "Workers should have absolute priority in compensation disputes. When evidence is ambiguous, interpretations should favor the laborer who provided value.",
+    "rationale": "Labor creates value; without workers there is no economy to govern."
   },
   "@immediate_compensation": {
-    "definition": "the charter should mandate maximum payment timelines (e.g., 14 days from verified work) with automatic penalties for delays"
+    "version": "1.0.0",
+    "definition": "Payment must occur within 24 hours of verified work completion. Delays beyond this trigger automatic penalty interest at 5% per day.",
+    "rationale": "Workers cannot wait for bureaucracy; they have immediate needs."
   },
-  "@proof_before_payment_rule": {
-    "definition": "Require that all wage-band updates, COLA disbursements, and dispute-resolution awards flow through the forthcoming @proof_before_payment_rule checkpoints. Panels must document the labor evidence and audit confirmation before authorizing payments, reconciling @labor_primacy and ensuring COLA remains contribution-anchored."
+  "@exploitation_presumption": {
+    "version": "1.0.0",
+    "definition": "In disputes, exploitation should be presumed until the platform/employer proves otherwise. The burden of proof lies with the party holding more power.",
+    "rationale": "Power asymmetry means workers cannot easily prove harm; flip the burden."
+  },
+  "@verifiable_claim": {
+    "definition": "A claim that can be objectively proven or disproven through the examination of evidence.",
+    "aligns_with": [
+      "@evidence"
+    ],
+    "criteria": [
+      "Supported by @evidence of quality tier C or higher",
+      "Mechanisms for independent review and validation must exist",
+      "Claim details must be publicly accessible to ensure auditability"
+    ]
   }
 }
